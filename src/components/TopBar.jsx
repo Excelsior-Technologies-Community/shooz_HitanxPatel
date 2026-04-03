@@ -1,21 +1,32 @@
 import React from "react";
 import "./TopBar.css";
 
-function TopBar() {
+const TopBar = () => {
   return (
     <div className="topbar">
-      <div className="marquee">
-        <div className="marquee-content">
-          <span>
-            Get 15% off your first purchase when you sign up for our newsletter. <u>Dismiss</u>
-          </span>
-          <span>
-            Enjoy 20% off your entire order with the code <b>SHOEFRESH20</b>.<u>Dismiss</u>
-          </span>
-        </div>
+      
+      <div className="topbar-left">
+        One Day Delivery Available
       </div>
+
+      <div className="topbar-right">
+        
+        <div className="auth-links">
+          <a href="#">Login</a>
+          <span>/</span>
+          <a href="#">Register</a>
+        </div>
+
+        <div className="social-icons">
+          <i className="fab fa-facebook-f"></i>
+          <i className="fab fa-twitter"></i>
+          <i className="fab fa-instagram"></i>
+        </div>
+
+      </div>
+
     </div>
   );
-}
+};
 
 export default TopBar;

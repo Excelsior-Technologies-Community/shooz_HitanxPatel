@@ -1,32 +1,69 @@
 .topbar {
-  background: linear-gradient(to right, #6a5acd, #c94b4b);
-  color: white;
-  overflow: hidden;
-  padding: 8px 0;
-}
-
-.marquee {
-  width: 100%;
-  overflow: hidden;
-  position: relative;
-}
-
-.marquee-content {
   display: flex;
-  gap: 130px;
+  justify-content: space-between;
+  align-items: center;
+  background: #f1f1f1;
+  height: 40px;
+  padding: 0 20px;
+  border-bottom: 1px solid #ddd;
+  font-size: 14px;
+}
+
+.topbar-left {
   white-space: nowrap;
-  animation: scroll 15s linear infinite;
 }
 
-.marquee-content span {
-  margin-right: 50px;
+.topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  white-space: nowrap;
 }
 
-@keyframes scroll {
-  0% {
-    transform: translateX(100%);
+.auth-links a {
+  text-decoration: none;
+  color: black;
+  margin: 0 3px;
+}
+
+.auth-links span {
+  margin: 0 3px;
+}
+
+.auth-links a:hover {
+  color: #bf4d56;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.social-icons i {
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.social-icons i:hover {
+  color: #bf4d56;
+}
+
+body {
+  margin: 0;
+}
+
+@media (max-width: 991px) {
+  .topbar {
+    justify-content: center;
+    text-align: center;
   }
-  100% {
-    transform: translateX(-100%);
+
+  .topbar-right {
+    display: none;
+  }
+
+  .topbar-left {
+    width: 100%;
   }
 }

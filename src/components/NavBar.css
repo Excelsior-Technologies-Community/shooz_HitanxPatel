@@ -1,0 +1,181 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+}
+
+.logo img {
+  height: 20px;
+  width: auto;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+  margin: 0;
+}
+
+.nav-links li {
+  cursor: pointer;
+  position: relative;
+}
+
+.nav-links > li.active,
+.nav-links > li:hover {
+  color: red;
+  border-bottom: 2px solid red;
+}
+
+.arrow {
+  font-size: 12px;
+  margin-left: 5px;
+  transition: 0.3s;
+}
+
+.buy-now {
+  position: relative;
+}
+
+.sale-badge {
+  position: absolute;
+  top: -10px;
+  right: -20px;
+  background: green;
+  color: white;
+  font-size: 10px;
+  padding: 2px 6px;
+  border-radius: 10px;
+}
+
+.nav-icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-icons i {
+  position: relative;
+  cursor: pointer;
+}
+
+.badge {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  background: red;
+  color: white;
+  font-size: 10px;
+  padding: 2px 5px;
+  border-radius: 50%;
+}
+
+.nav-icons span {
+  margin-left: 5px;
+}
+
+/* ===== SHOP MENU ROOT ===== */
+.shop-menu {
+  position: relative;
+}
+
+.shop-menu__arrow {
+  font-size: 12px;
+  margin-left: 5px;
+  transition: 0.3s;
+}
+
+.shop-menu__dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-left: -600px; 
+  width: 100%;
+  padding: 60px 0;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: 0.3s ease;
+  z-index: 2;
+  background: red;
+}
+
+.shop-menu:hover .shop-menu__dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.shop-menu__container {
+  max-width: 1200px;
+  margin: auto; 
+  margin-top: -30px;
+  display: flex;
+  justify-content: space-between;
+  gap: 120px;
+  padding: 0 20px;
+}
+
+.shop-menu__column {
+  min-width: 180px;
+}
+
+.shop-menu__column h4 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #000;
+  font-weight: 600;
+}
+
+.shop-menu__column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.shop-menu__column ul li {
+  margin: 8px 0;
+  font-size: 18px;
+  color: #777;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.shop-menu__column ul li:hover {
+  color: red;
+}
+
+.shop-menu__images {
+  display: flex;
+  gap: 30px;
+}
+
+.shop-menu__card {
+  text-align: center;
+  overflow: hidden;
+}
+
+.shop-menu__card img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.shop-menu__card:hover img {
+  transform: scale(1.1);
+}
+
+.shop-menu__card h5 {
+  margin-top: 15px;
+  font-size: 22px;
+  font-weight: 600;
+  color: #000;
+}
+
+.shop-menu__card p {
+  margin-top: -30px;
+  font-size: 15px;
+  color: #777;
+}
