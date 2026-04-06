@@ -1,3 +1,4 @@
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -82,7 +83,7 @@
 
 .shop-menu__arrow {
   font-size: 12px;
-  margin-left: 5px;
+  /* margin-left: 5px; */
   transition: 0.3s;
 }
 
@@ -91,7 +92,7 @@
   top: 100%;
   left: 0;
   margin-left: -600px; 
-  width: 100%;
+  width: 100vw;
   padding: 60px 0;
   opacity: 0;
   visibility: hidden;
@@ -115,10 +116,11 @@
   justify-content: space-between;
   gap: 120px;
   padding: 0 20px;
+  margin-left: -5px;
 }
 
 .shop-menu__column {
-  min-width: 180px;
+  min-width: 200px;
 }
 
 .shop-menu__column h4 {
@@ -152,19 +154,26 @@
 }
 
 .shop-menu__card {
-  text-align: center;
+  overflow: hidden;
+  position: relative;
+  text-align: center; 
+}
+
+.img-box {
+  width: 250px;
+  height: 250px;
   overflow: hidden;
 }
 
-.shop-menu__card img {
-  width: 250px;
-  height: 250px;
+.img-box img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   transition: transform 0.4s ease;
 }
 
-.shop-menu__card:hover img {
-  transform: scale(1.1);
+.img-box:hover img {
+  transform: scale(1.2);
 }
 
 .shop-menu__card h5 {
@@ -178,4 +187,20 @@
   margin-top: -30px;
   font-size: 15px;
   color: #777;
+  cursor: default;
 }
+
+/* @media (max-width: 1200px) {
+  .shop-menu__container {
+    gap: 30px;
+  }
+
+  .shop-menu__images {
+    gap: 15px;
+  }
+
+  .img-box {
+    width: 200px;
+    height: 200px;
+  }
+} */

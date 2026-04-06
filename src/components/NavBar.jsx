@@ -18,22 +18,23 @@ const Navbar = () => {
 
                 <div className="shop-menu__dropdown">
 
-                    <div className="shop-menu__container">
+                    <div className="container-fluid">
+                        <div className="row shop-menu__container">
 
-                        <div className="shop-menu__column">
+                        <div className="col-lg-3 col-md-2 shop-menu__column">
                             <h4>Layout</h4>
                             <ul>
-                            <li>Filter Sidebar</li>
-                            <li>Filter Top</li>
-                            <li>Filter Drawer</li>
-                            <li>Without Filter</li>
-                            <li>Collection - 2 columns</li>
-                            <li>Collection - 3 columns</li>
-                            <li>Collection - 4 columns</li>
+                            <li>1.Filter Sidebar</li>
+                            <li>2.Filter Top</li>
+                            <li>3.Filter Drawer</li>
+                            <li>4.Without Filter</li>
+                            <li>5.Collection - 2 columns</li>
+                            <li>6.Collection - 3 columns</li>
+                            <li>7.Collection - 4 columns</li>
                             </ul>
                         </div>
 
-                        <div className="shop-menu__column">
+                        <div className="col-lg-3 col-md-2 shop-menu__column">
                             <h4>Features</h4>
                             <ul>
                             <li>Banner Image</li>
@@ -47,7 +48,7 @@ const Navbar = () => {
                             </ul>
                         </div>
 
-                        <div className="shop-menu__column">
+                        <div className="col-lg-3 col-md-2 shop-menu__column">
                             <h4>Hover Style</h4>
                             <ul>
                             <li>Hover Style 1</li>
@@ -61,23 +62,29 @@ const Navbar = () => {
                             </ul>
                         </div>
 
-                        <div className="shop-menu__images">
+                        <div className="col-lg-3 col-md-6 shop-menu__images">
 
                             <div className="shop-menu__card">
-                            <img src="https://qx-shooz.myshopify.com/cdn/shop/collections/col-5.png?v=1731658002&width=360" />
+                            <div className="img-box">
+                                <img src="https://qx-shooz.myshopify.com/cdn/shop/collections/col-5.png?v=1731658002&width=360" />
+                            </div>
                             <h5>Athletic Footwear</h5>
                             <p>8 products</p>
                             </div>
 
                             <div className="shop-menu__card">
-                            <img src="https://qx-shooz.myshopify.com/cdn/shop/collections/col-4.png?v=1731657987&width=360" />
+                            <div className="img-box">
+                                <img src="https://qx-shooz.myshopify.com/cdn/shop/collections/col-4.png?v=1731657987&width=360" />
+                            </div>
                             <h5>Boots for Every Occasion</h5>
                             <p>8 products</p>
                             </div>
 
                         </div>
 
+                        </div>
                     </div>
+
                 </div>
 
             </li>
