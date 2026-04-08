@@ -61,6 +61,15 @@
   cursor: pointer;
 }
 
+.icon-box {
+  position: relative;
+  display: inline-block;
+}
+
+.icon-box i {
+  font-size: 18px;
+}
+
 .badge {
   position: absolute;
   bottom: -3px;
@@ -91,7 +100,7 @@
   top: 100%;
   left: 0;
   margin-left: -450px; 
-  width: 2280%;
+  width: auto; 
   padding: 60px 0;
   opacity: 0;
   visibility: hidden;
@@ -116,6 +125,7 @@
   gap: 10px;
   padding: 0 20px;
   margin-left: -5px;
+  flex-wrap: nowrap; 
 }
 
 .shop-menu__column {
@@ -183,7 +193,7 @@
 }
 
 .shop-menu__card p {
-  margin-top: -30px;
+  margin-top: 5px;
   font-size: 15px;
   color: #777;
   cursor: default;
@@ -508,134 +518,13 @@
   display: none;
 }
 
-@media (max-width: 500px){
+@media (min-width: 901px) and (max-width: 1250px) {
   .navbar {
-    display: none;
+    display: none !important;
   }
 
   .mob-navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 15px 10px;
-    position: relative;
-    background: #fff;
-  }
-
-  .mobile-left {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-  }
-
-  .mobile-right {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-  }
-
-  .mobile-left i,
-  .mobile-right i {
-    font-size: 18px;
-    cursor: pointer;
-    position: relative;
-  }
-
-  .mob-navbar .logo {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  .mob-navbar .logo img {
-    height: 22px;
-  }
-
-  .mobile-right .badge {
-    position: absolute;
-    bottom: -3px;
-    right: -10px;
-    background: red;
-    color: white;
-    font-size: 10px;
-    padding: 2px 5px;
-    border-radius: 50%;
-  }
-
-  .mobile-right span {
-    font-size: 14px;
-    margin-left: 4px;
-  }
-}
-
-@media (min-width: 501px) and (max-width: 900px){
-
-  .navbar {
-    display: none;
-  }
-
-  .mob-navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 15px 50px;
-    position: relative;
-    background: #fff;
-  }
-
-  .mobile-left {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-  }
-
-  .mobile-right {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-  }
-
-  .mobile-left i,
-  .mobile-right i {
-    font-size: 18px;
-    cursor: pointer;
-    position: relative;
-  }
-
-  .mob-navbar .logo {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  .mob-navbar .logo img {
-    height: 22px;
-  }
-
-  .mobile-right .badge {
-    position: absolute;
-    bottom: -3px;
-    right: -10px;
-    background: red;
-    color: white;
-    font-size: 10px;
-    padding: 2px 5px;
-    border-radius: 50%;
-  }
-
-  .mobile-right span {
-    font-size: 14px;
-    margin-left: 4px;
-  }
-}
-
-@media (min-width: 901px) and (max-width: 1200px) {
-  .navbar {
-    display: none;
-  }
-
-  .mob-navbar {
-    display: flex;
+    display: flex !important;
     align-items: center;
     justify-content: space-between;
     padding: 15px 150px;
@@ -689,20 +578,148 @@
   }
 }
 
-/* ===== MOBILE MENU =====  */
-.offcanvas {
-  width: 320px !important; /* 🔥 fix */
+@media (min-width: 501px) and (max-width: 900px){
+
+  .navbar {
+    display: none !important;
+  }
+
+  .mob-navbar {
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 50px;
+    position: relative;
+    background: #fff;
+  }
+
+  .mobile-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .mobile-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .mobile-left i,
+  .mobile-right i {
+    font-size: 18px;
+    cursor: pointer;
+    position: relative;
+  }
+
+  .mob-navbar .logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .mob-navbar .logo img {
+    height: 22px;
+  }
+
+  .mobile-right .badge {
+    position: absolute;
+    bottom: -3px;
+    right: -10px;
+    background: red;
+    color: white;
+    font-size: 10px;
+    padding: 2px 5px;
+    border-radius: 50%;
+  }
+
+  .mobile-right span {
+    font-size: 14px;
+    margin-left: 4px;
+  }
+}
+
+@media (max-width: 500px){
+  .navbar {
+    display: none !important;
+  }
+
+  .mob-navbar {
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 10px;
+    position: relative;
+    background: #fff;
+  }
+
+  .mobile-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .mobile-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .mobile-left i,
+  .mobile-right i {
+    font-size: 18px;
+    cursor: pointer;
+    position: relative;
+  }
+
+  .mob-navbar .logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .mob-navbar .logo img {
+    height: 22px;
+  }
+
+  .mobile-right .badge {
+    position: absolute;
+    bottom: -3px;
+    right: -10px;
+    background: red;
+    color: white;
+    font-size: 10px;
+    padding: 2px 5px;
+    border-radius: 50%;
+  }
+
+  .mobile-right span {
+    font-size: 14px;
+    margin-left: 4px;
+  }
+}
+/* ===== OFFCANVAS FIX ===== */
+.mobile-offcanvas {
+  width: 400px !important;
+  background: #fff;
+}
+
+.offcanvas-body {
+  padding: 10px 20px;
 }
 
 .mobile-menu {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
-.mobile-menu li {
-  padding: 15px 0;
-  font-size: 16px;
-  border-bottom: 1px solid #eee;
+.menu-link {
+  padding: 16px 0;
+  font-size: 18px;
+  font-weight: 600;
+  border-bottom: 2px solid #eee;
+  display: block;
 }
 
 .menu-item {
@@ -711,20 +728,109 @@
   align-items: center;
 }
 
-.menu-item span {
-  font-size: 20px;
+.plus {
+  font-size: 18px;
+  color: #000;
 }
 
-/* LOGIN */
+.buy-now-mobile {
+  position: relative;
+}
+
+.sale-badge-mobile {
+  background: #22c55e;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 600;
+  padding: 2px 6px;
+  border-radius: 10px;
+  margin-left: 8px;
+}
+
 .login {
-  font-size: 14px;
+  font-size: 16px;
   color: #777;
+  padding: 10px 0;
+  border-bottom: 2px solid #eee;
 }
 
-/* FOOTER */
 .footer-row {
   display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 14px 0;
+  gap: 20px;
+  border-bottom: 2px solid #eee;
+}
+
+.footer-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+  color: black;
+}
+
+.footer-item .arrow {
+  font-size: 12px;
+}
+
+.offcanvas-header {
+  padding: 10px 15px;
+}
+
+.submenu {
+  padding-left: 10px;
+}
+
+.submenu-title {
+  display: flex;
   justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  color: #555;
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.submenu ul {
+  list-style: none;
+  padding-left: 15px;
+  margin: 5px 0;
+  border-left: 1px solid #ddd;
+}
+
+.submenu ul li {
   font-size: 14px;
   color: #777;
+  padding: 6px 0;
+  cursor: pointer;
+}
+
+.submenu ul li:hover {
+  color: red;
+}
+
+.simple-submenu {
+  list-style: none;
+  padding-left: 15px;
+  margin: 5px 0;
+}
+
+.simple-submenu li {
+  font-size: 14px;
+  color: #777;
+  padding: 6px 0;
+  cursor: pointer;
+}
+
+.simple-submenu li:hover {
+  color: red;
+}
+
+@media (max-width: 356px) {
+  .mob-navbar .logo img {
+    height: 16px;
+    width: auto;
+  }
 }

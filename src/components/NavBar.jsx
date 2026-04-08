@@ -1,7 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import "./NavBar.css";
 
 const Navbar = () => {
+    const [shopOpen, setShopOpen] = useState(false);
+    const [layoutOpen, setLayoutOpen] = useState(false);
+    const [featureOpen, setFeatureOpen] = useState(false);
+    const [hoverOpen, setHoverOpen] = useState(false);
+    const [productOpen, setProductOpen] = useState(false);
+    const [productLayoutOpen, setProductLayoutOpen] = useState(false);
+    const [productTypeOpen, setProductTypeOpen] = useState(false);
+    const [featured1Open, setFeatured1Open] = useState(false);
+    const [featured2Open, setFeatured2Open] = useState(false);
+    const [blogOpen, setBlogOpen] = useState(false);
+    const [listLayoutOpen, setListLayoutOpen] = useState(false);
+    const [gridLayoutOpen, setGridLayoutOpen] = useState(false);
+    const [articleOpen, setArticleOpen] = useState(false);
+    const [pagesOpen, setPagesOpen] = useState(false);
     return (
     <>
         <div className="navbar">
@@ -20,9 +34,9 @@ const Navbar = () => {
                     <div className="shop-menu__dropdown">
 
                         <div className="container-fluid">
-                            <div className="row shop-menu__container">
+                            <div className="shop-menu__container">
 
-                                <div className="col-lg-3 col-md-2 shop-menu__column">
+                                <div className="col-lg-2 col-md-2 shop-menu__column">
                                     <h4>Layout</h4>
                                     <ul>
                                     <li>1.Filter Sidebar</li>
@@ -35,7 +49,7 @@ const Navbar = () => {
                                     </ul>
                                 </div>
 
-                                <div className="col-lg-3 col-md-2 shop-menu__column">
+                                <div className="col-lg-2 col-md-2 shop-menu__column">
                                     <h4>Features</h4>
                                     <ul>
                                     <li>Banner Image</li>
@@ -49,7 +63,7 @@ const Navbar = () => {
                                     </ul>
                                 </div>
 
-                                <div className="col-lg-3 col-md-2 shop-menu__column">
+                                <div className="col-lg-2 col-md-2 shop-menu__column">
                                     <h4>Hover Style</h4>
                                     <ul>
                                     <li>Hover Style 1</li>
@@ -63,7 +77,7 @@ const Navbar = () => {
                                     </ul>
                                 </div>
 
-                                <div className="col-lg-3 col-md-6 shop-menu__images">
+                                <div className="col-lg-6 col-md-6 shop-menu__images">
 
                                     <div className="shop-menu__card">
                                     <div className="img-box">
@@ -258,9 +272,10 @@ const Navbar = () => {
             <div className="nav-icons">
                 <i className="fas fa-search"></i>
                 <i className="far fa-user"></i>
-                <i className="far fa-heart">
-                <span className="badge">0</span>
-                </i>
+                <div className="icon-box">
+                    <i className="far fa-heart"></i>
+                    <span className="badge">0</span>
+                </div>
                 <i className="fas fa-shopping-bag">
                 <span>(0)</span>
                 </i>
@@ -296,52 +311,320 @@ const Navbar = () => {
         </div>
 
         <div
-            className="offcanvas offcanvas-start"
+            className="offcanvas offcanvas-start mobile-offcanvas"
             tabIndex="-1"
             id="mobileMenu"
             >
             <div className="offcanvas-header">
-                <button type="button" className="btn-close" data-bs-dismiss="offcanvas"></button>
+                <button
+                type="button"
+                className="btn-close"
+                data-bs-dismiss="offcanvas"
+                ></button>
             </div>
 
             <div className="offcanvas-body">
 
                 <ul className="mobile-menu">
 
-                <li>Home</li>
+                <li className="menu-link">Home</li>
 
-                <li className="menu-item">
-                    Shop <span>+</span>
-                </li>
+                <li>
 
-                <li className="menu-item">
-                    Product <span>+</span>
-                </li>
+                    <div
+                        className="menu-link menu-item"
+                        onClick={() => setShopOpen(!shopOpen)}
+                    >
+                        <span>Shop</span>
+                        <span>{shopOpen ? "−" : "+"}</span>
+                    </div>
 
-                <li className="menu-item">
-                    Blog <span>+</span>
-                </li>
+                    {shopOpen && (
+                        <div className="submenu">
 
-                <li className="menu-item">
-                    Pages <span>+</span>
+                        <div
+                            className="submenu-title"
+                            onClick={() => setLayoutOpen(!layoutOpen)}
+                        >
+                            <span>Layout</span>
+                            <span>{layoutOpen ? "−" : "+"}</span>
+                        </div>
+
+                        {layoutOpen && (
+                            <ul>
+                            <li>1. Filter Sidebar</li>
+                            <li>2. Filter Top</li>
+                            <li>3. Filter Drawer</li>
+                            <li>4. Without Filter</li>
+                            <li>5. Collection - 2 columns</li>
+                            <li>6. Collection - 3 columns</li>
+                            <li>7. Collection - 4 columns</li>
+                            </ul>
+                        )}
+
+                        <div
+                            className="submenu-title"
+                            onClick={() => setFeatureOpen(!featureOpen)}
+                        >
+                            <span>Features</span>
+                            <span>{featureOpen ? "−" : "+"}</span>
+                        </div>
+
+                        {featureOpen && (
+                            <ul>
+                            <li>Banner Image</li>
+                            <li>Banner No Image</li>
+                            <li>Banner Split</li>
+                            <li>Collection list</li>
+                            <li>Sub Collection</li>
+                            <li>Pagination</li>
+                            <li>Infinity</li>
+                            <li>Load More</li>
+                            </ul>
+                        )}
+
+                        <div
+                            className="submenu-title"
+                            onClick={() => setHoverOpen(!hoverOpen)}
+                        >
+                            <span>Hover Style</span>
+                            <span>{hoverOpen ? "−" : "+"}</span>
+                        </div>
+
+                        {hoverOpen && (
+                            <ul>
+                            <li>Hover Style 1</li>
+                            <li>Hover Style 2</li>
+                            <li>Hover Style 3</li>
+                            <li>Hover Style 4</li>
+                            <li>Hover Style 5</li>
+                            <li>Hover Style 6</li>
+                            <li>Hover Style 7</li>
+                            <li>Hover Style 8</li>
+                            </ul>
+                        )}
+
+                        </div>
+                    )}
+
                 </li>
 
                 <li>
-                    Buy Now <span className="sale-badge">Sale</span>
+
+                    <div
+                        className="menu-link menu-item"
+                        onClick={() => setProductOpen(!productOpen)}
+                    >
+                        <span>Product</span>
+                        <span>{productOpen ? "−" : "+"}</span>
+                    </div>
+
+                    {productOpen && (
+                        <div className="submenu">
+
+                        <div
+                            className="submenu-title"
+                            onClick={() => setProductLayoutOpen(!productLayoutOpen)}
+                        >
+                            <span>Product Layouts</span>
+                            <span>{productLayoutOpen ? "−" : "+"}</span>
+                        </div>
+
+                        {productLayoutOpen && (
+                            <ul>
+                            <li>1. Thumbnails - bottom</li>
+                            <li>2. Thumbnails - left</li>
+                            <li>3. Thumbnails - right</li>
+                            <li>4. Without Thumbnails</li>
+                            <li>5. List - stacked</li>
+                            <li>6. List - grid</li>
+                            <li>7. Collage - style 1</li>
+                            <li>8. Collage - style 2</li>
+                            </ul>
+                        )}
+
+                        <div
+                            className="submenu-title"
+                            onClick={() => setProductTypeOpen(!productTypeOpen)}
+                        >
+                            <span>Product Type</span>
+                            <span>{productTypeOpen ? "−" : "+"}</span>
+                        </div>
+
+                        {productTypeOpen && (
+                            <ul>
+                            <li>Simple Product</li>
+                            <li>Variable Product</li>
+                            <li>With Video</li>
+                            <li>Sold Out - Coming</li>
+                            </ul>
+                        )}
+
+                        <div
+                            className="submenu-title"
+                            onClick={() => setFeatured1Open(!featured1Open)}
+                        >
+                            <span>List Featured 1</span>
+                            <span>{featured1Open ? "−" : "+"}</span>
+                        </div>
+
+                        {featured1Open && (
+                            <ul>
+                            <li>Sticky ATC</li>
+                            <li>Frequently Bought Together</li>
+                            <li>Count Down</li>
+                            <li>Cross Selling</li>
+                            <li>Upsell Popup</li>
+                            <li>Low Stock Alert</li>
+                            <li>Pickup Store</li>
+                            </ul>
+                        )}
+
+                        <div
+                            className="submenu-title"
+                            onClick={() => setFeatured2Open(!featured2Open)}
+                        >
+                            <span>List Featured 2</span>
+                            <span>{featured2Open ? "−" : "+"}</span>
+                        </div>
+
+                        {featured2Open && (
+                            <ul>
+                            <li>Dropdown Variant</li>
+                            <li>Swatch Variant Color</li>
+                            <li>Swatch Variant Image</li>
+                            <li>Variant Image Square</li>
+                            <li>Size Guide</li>
+                            <li>Description Accordion</li>
+                            <li>Description Tab Center</li>
+                            </ul>
+                        )}
+
+                        </div>
+                    )}
+
                 </li>
 
-                <hr />
+                <li>
+
+                    <div
+                        className="menu-link menu-item"
+                        onClick={() => setBlogOpen(!blogOpen)}
+                    >
+                        <span>Blog</span>
+                        <span>{blogOpen ? "−" : "+"}</span>
+                    </div>
+
+                    {blogOpen && (
+                        <div className="submenu">
+
+                        <div
+                            className="submenu-title"
+                            onClick={() => setListLayoutOpen(!listLayoutOpen)}
+                        >
+                            <span>List Layout</span>
+                            <span>{listLayoutOpen ? "−" : "+"}</span>
+                        </div>
+
+                        {listLayoutOpen && (
+                            <ul>
+                            <li>List Left Sidebar</li>
+                            <li>List Right Sidebar</li>
+                            <li>List Item Basic</li>
+                            <li>List Item Overlay</li>
+                            <li>List Item Box</li>
+                            <li>List Item Classic</li>
+                            <li>List Item Classic Box</li>
+                            </ul>
+                        )}
+
+                        <div
+                            className="submenu-title"
+                            onClick={() => setGridLayoutOpen(!gridLayoutOpen)}
+                        >
+                            <span>Grid Layout</span>
+                            <span>{gridLayoutOpen ? "−" : "+"}</span>
+                        </div>
+
+                        {gridLayoutOpen && (
+                            <ul>
+                            <li>Grid Left Sidebar</li>
+                            <li>Grid Right Sidebar</li>
+                            <li>Grid Item Basic</li>
+                            <li>Grid Item Overlay</li>
+                            <li>Grid Item Box</li>
+                            <li>Grid Item Classic</li>
+                            </ul>
+                        )}
+
+                        <div
+                            className="submenu-title"
+                            onClick={() => setArticleOpen(!articleOpen)}
+                        >
+                            <span>Article</span>
+                            <span>{articleOpen ? "−" : "+"}</span>
+                        </div>
+
+                        {articleOpen && (
+                            <ul>
+                            <li>Title in image</li>
+                            <li>Title after image</li>
+                            <li>Title before image</li>
+                            <li>Left Sidebar</li>
+                            <li>Right Sidebar</li>
+                            <li>Title Center</li>
+                            <li>Article Video</li>
+                            </ul>
+                        )}
+
+                        </div>
+                    )}
+
+                </li>
+
+                <li>
+
+                    <div
+                        className="menu-link menu-item"
+                        onClick={() => setPagesOpen(!pagesOpen)}
+                    >
+                        <span>Pages</span>
+                        <span>{pagesOpen ? "−" : "+"}</span>
+                    </div>
+
+                    {pagesOpen && (
+                        <ul className="submenu simple-submenu">
+                        <li>About Us 1</li>
+                        <li>About Us 2</li>
+                        <li>About Us 3</li>
+                        <li>Contact</li>
+                        <li>Faqs</li>
+                        <li>Lookbook</li>
+                        <li>Size Guide</li>
+                        <li>Wishlist</li>
+                        </ul>
+                    )}
+
+                </li>
+
+                <li className="menu-link buy-now-mobile">
+                    Buy Now <span className="sale-badge-mobile">Sale</span>
+                </li>
 
                 <li className="login">Login / Register</li>
 
-                <hr />
-
                 <li className="footer-row">
-                    AUD $ <span>⌄</span>
-                </li>
 
-                <li className="footer-row">
-                    English <span>⌄</span>
+                    <div className="footer-item">
+                        <span>AUD $</span>
+                        <span className="arrow">⌄</span>
+                    </div>
+
+                    <div className="footer-item">
+                        <span>English</span>
+                        <span className="arrow">⌄</span>
+                    </div>
+
                 </li>
 
                 </ul>
