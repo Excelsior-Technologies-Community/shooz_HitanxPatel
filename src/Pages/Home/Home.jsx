@@ -1,6 +1,9 @@
 import AnnouncementBar from "../../components/AnnouncementBar";
 import TopBar from "../../components/TopBar";
 import NavBar from "../../components/NavBar";
+import Heroslider from "./Heroslider";
+import CategorySection from "./CategorySection";
+import ProductSection from "./ProductSection";
 
 function Home() {
   return (
@@ -8,7 +11,9 @@ function Home() {
       <AnnouncementBar />
       <TopBar />
       <NavBar />
-      <h1>Home Page</h1>
+      <Heroslider />
+      <CategorySection />
+      <ProductSection />
     </>
   );
 }
