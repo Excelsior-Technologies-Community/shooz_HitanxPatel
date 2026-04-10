@@ -49,6 +49,39 @@
   background: black;
 }
 
+.product-slider {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.product-slider::-webkit-scrollbar {
+  display: none;
+}
+
+.product-slide {
+  flex: 0 0 25%;
+}
+
+@media (max-width: 1200px) {
+  .product-slide {
+    flex: 0 0 33.33%;
+  }
+}
+
+@media (max-width: 991px) {
+  .product-slide {
+    flex: 0 0 50%;
+  }
+}
+
+@media (max-width: 767px) {
+  .product-slide {
+    flex: 0 0 100%;
+  }
+}
+
 .product-card {
   background: #fff;
 }

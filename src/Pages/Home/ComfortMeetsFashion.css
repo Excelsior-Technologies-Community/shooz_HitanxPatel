@@ -1,0 +1,126 @@
+.comfort-fashion-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.comfort-fashion-bg {
+  width: 100%;
+  height: 650px;
+  object-fit: cover;
+}
+
+.comfort-fashion-overlay {
+  position: absolute;
+  top: 50%;
+  right: 8%;
+  transform: translateY(-50%);
+  max-width: 800px;
+  text-align: right;
+}
+
+.comfort-fashion-subtitle {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.comfort-fashion-title {
+  font-size: 42px;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.comfort-fashion-description {
+  font-size: 16px;
+  color: #000;
+  margin-bottom: 30px;
+}
+
+.comfort-fashion-btn {
+  background-color: #b4454f;
+  color: #fff;
+  padding: 12px 25px;
+  border: none;
+  font-weight: 500;
+}
+
+.comfort-fashion-btn:hover {
+  background-color: black;
+}
+
+@media (max-width: 991px) {
+  .comfort-fashion-overlay {
+    right: 50%;
+    transform: translate(50%, -50%);
+    text-align: center;
+  }
+
+  .comfort-fashion-title {
+    font-size: 28px;
+  }
+}
+
+.offer-bar {
+  width: 100%;
+  overflow: hidden;
+  background: linear-gradient(90deg, #6b8e23, #c76b1c, #d64545);
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.offer-track {
+  display: flex;
+  width: max-content;
+  animation: scrollLoop 20s linear infinite;
+}
+
+.offer-container {
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+}
+
+.offer-item {
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+  position: relative;
+  color: #fff;
+  font-size: 18px;
+  white-space: nowrap;
+  flex-shrink: 0;  
+}
+
+.offer-item::before {
+  content: "";
+  position: absolute;
+  left: -5px;
+  width: 8px;
+  height: 8px;
+  background: #ffcc00;
+  border-radius: 50%;
+}
+
+@keyframes scrollLoop {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 991px) {
+  .comfort-fashion-content {
+    padding: 30px;
+    text-align: center;
+  }
+
+  .comfort-fashion-title {
+    font-size: 28px;
+  }
+}

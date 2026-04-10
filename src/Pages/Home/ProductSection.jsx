@@ -73,9 +73,9 @@ const ProductSection = () => {
         </div>
       </div>
 
-      <div className="row mt-4">
+      <div className="product-slider">
         {products.map((item) => (
-          <div className="col-lg-3 col-md-6 mb-4" key={item.id}>
+          <div className="product-slide" key={item.id}>
             <div className="product-card">
 
               <div className="product-img-wrapper">

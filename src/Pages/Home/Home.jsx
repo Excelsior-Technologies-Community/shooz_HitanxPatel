@@ -4,6 +4,9 @@ import NavBar from "../../components/NavBar";
 import Heroslider from "./Heroslider";
 import CategorySection from "./CategorySection";
 import ProductSection from "./ProductSection";
+import ComfortMeetsFashion from "./ComfortMeetsFashion";
+import BootsSection from "./BootsSection";
+import FashionSneakers from "./FashionSneakers";
 
 function Home() {
   return (
@@ -14,6 +17,9 @@ function Home() {
       <Heroslider />
       <CategorySection />
       <ProductSection />
+      <ComfortMeetsFashion />
+      <BootsSection />
+      <FashionSneakers />
     </>
   );
 }
