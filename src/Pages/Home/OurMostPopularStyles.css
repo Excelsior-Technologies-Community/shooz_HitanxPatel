@@ -1,0 +1,47 @@
+/* MAIN SECTION */
+.popular-styles-section {
+  background-color: #f8f8f8;
+}
+
+/* SUBTITLE */
+.popular-subtitle {
+  letter-spacing: 2px;
+  font-size: 12px;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+/* TITLE */
+.popular-title {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+/* TEXT */
+.popular-text {
+  color: #555;
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+/* BUTTON */
+.popular-btn {
+  background-color: #c94b53;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  margin-top: 15px;
+}
+
+.popular-btn:hover {
+  background-color: #a63a41;
+}
+
+/* IMAGE BOX */
+.popular-img-box img {
+  width: 250px;
+  height: auto;
+  object-fit: cover;
+}

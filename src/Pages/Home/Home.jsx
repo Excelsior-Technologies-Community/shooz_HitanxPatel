@@ -7,6 +7,7 @@ import ProductSection from "./ProductSection";
 import ComfortMeetsFashion from "./ComfortMeetsFashion";
 import BootsSection from "./BootsSection";
 import FashionSneakers from "./FashionSneakers";
+import SeasonEndSale from "./SeasonEndSale";
 
 function Home() {
   return (
@@ -20,6 +21,7 @@ function Home() {
       <ComfortMeetsFashion />
       <BootsSection />
       <FashionSneakers />
+      <SeasonEndSale />
     </>
   );
 }

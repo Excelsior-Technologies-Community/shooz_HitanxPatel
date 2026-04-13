@@ -1,0 +1,147 @@
+.productSection_container {
+  padding: 60px 0;
+}
+
+.productSection_subtitle {
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: gray;
+}
+
+.productSection_title {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.productSection_tabs {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  position: relative;
+}
+
+.productSection_tabs::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 250px;
+  height: 1px;
+  background: #ddd;
+}
+
+.productSection_tab {
+  padding-bottom: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  color: gray;
+  position: relative;
+}
+
+.productSection_tab.active {
+  color: black;
+  font-weight: 500;
+}
+
+.productSection_tab.active::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: black;
+}
+
+/* .productSection_tab.active::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  width: 100%;
+  height: 2px;
+  background: black;
+} */
+
+.productSection_slider {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.productSection_slider::-webkit-scrollbar {
+  display: none;
+}
+
+.productSection_slide {
+  flex: 0 0 25%;
+}
+
+@media (max-width: 991px) {
+  .productSection_slide {
+    flex: 0 0 50%;
+  }
+}
+
+@media (max-width: 767px) {
+  .productSection_slide {
+    flex: 0 0 100%;
+  }
+}
+
+.productSection_card {
+  background: #fff;
+}
+
+.productSection_imgWrapper {
+  position: relative;
+  background: #f5f5f5;
+  overflow: hidden;
+}
+
+.productSection_img {
+  width: 100%;
+  transition: 0.4s;
+}
+
+.hover-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.productSection_card:hover .hover-img {
+  opacity: 1;
+}
+
+.productSection_card:hover .primary-img {
+  opacity: 0;
+}
+
+.productSection_info {
+  padding: 15px;
+}
+
+.productSection_hoverActions {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: 0.3s;
+}
+
+.productSection_card:hover .productSection_hoverActions {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.productSection_line {
+  height: 1px;
+  background: #ddd;
+  margin: 10px 0;
+}
+
+.productSection_actions {
+  display: flex;
+  justify-content: space-between;
+}

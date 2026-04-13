@@ -1,0 +1,48 @@
+.season-sale-section {
+  background-color: #f5f5f5;
+}
+
+.sale-subtitle {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #888;
+}
+
+.sale-title {
+  font-size: 54px;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.sale-desc {
+  color: #777;
+  max-width: 600px;
+  margin: auto;
+}
+
+.product-item {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 15px;
+}
+
+.product-img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.product-title {
+  font-size: 18px;
+  margin: 0;
+}
+
+.product-title:hover {
+  color: #ae3f4f  ;
+}
+
+.product-price {
+  font-size: 16px;
+  color: #555;
+}
