@@ -1,0 +1,35 @@
+.storeBanner_main {
+  background: linear-gradient(to right, #6a5acd, #d64545);
+  padding: 50px 0;
+}
+
+.storeBanner_container {
+  max-width: 1200px;
+}
+
+.storeBanner_heading {
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.storeBanner_button {
+  background-color: #3f51b5;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+@media (max-width: 992px) {
+  .storeBanner_text {
+    text-align: center !important;
+    margin-bottom: 10px;
+  }
+
+  .storeBanner_buttonWrapper {
+    text-align: center !important;
+  }
+}
