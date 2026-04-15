@@ -10,6 +10,9 @@ import FashionSneakers from "./FashionSneakers";
 import SeasonEndSale from "./SeasonEndSale";
 import OurMostPopularStyles from "./OurMostPopularStyles";
 import StoreBanner from "./StoreBanner";
+import CustomerFeedbackSection from "./CustomerFeedbackSection";
+import RecentlyOurPosts from "./RecentlyOurPosts";
+import SubscribeSection from "./SubscribeSection";
 
 function Home() {
   return (
@@ -26,6 +29,9 @@ function Home() {
       <SeasonEndSale />
       <OurMostPopularStyles />
       <StoreBanner />
+      <CustomerFeedbackSection />
+      <RecentlyOurPosts />
+      <SubscribeSection />
     </>
   );
 }
