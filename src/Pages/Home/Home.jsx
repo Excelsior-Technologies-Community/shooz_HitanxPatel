@@ -13,6 +13,7 @@ import StoreBanner from "./StoreBanner";
 import CustomerFeedbackSection from "./CustomerFeedbackSection";
 import RecentlyOurPosts from "./RecentlyOurPosts";
 import SubscribeSection from "./SubscribeSection";
+import Footer from "../../components/Footer";
 
 function Home() {
   return (
@@ -32,6 +33,7 @@ function Home() {
       <CustomerFeedbackSection />
       <RecentlyOurPosts />
       <SubscribeSection />
+      <Footer />
     </>
   );
 }
