@@ -1,0 +1,42 @@
+.styleRedefined_section {
+  background-color: #f2f2f2;
+  padding: 80px 0;
+}
+
+.styleRedefined_card {
+  background: #ffffff;
+  padding: 50px 40px;
+}
+
+.styleRedefined_subtitle {
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.styleRedefined_title {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.styleRedefined_description {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.styleRedefined_button {
+  background-color: #b23a48;
+  color: #fff;
+  padding: 12px 28px;
+  border: none;
+  font-weight: 500;
+  letter-spacing: 1px;
+  transition: 0.3s;
+}
+
+.styleRedefined_button:hover {
+  background-color: black;
+}

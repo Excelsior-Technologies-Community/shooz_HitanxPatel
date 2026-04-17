@@ -1,5 +1,6 @@
 import React from "react";
 import "./OurMostPopularStyles.css";
+import { Link } from "react-router-dom";
 
 const PopularStyles = () => {
   return (
@@ -26,9 +27,12 @@ const PopularStyles = () => {
               Leo elementum euismod penatibus cras sociosqu aliquet tellus.
             </p>
 
-            <button className="btn popular-btn">
+            {/* <button className="btn popular-btn">
               SHOP NOW →
-            </button>
+            </button> */}
+            <Link to="/collection" className="btn popular-btn">
+              SHOP NOW →
+            </Link>
           </div>
 
           <div className="col-lg-6 d-flex gap-3 justify-content-center mt-4 mt-lg-0">

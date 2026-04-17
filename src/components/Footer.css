@@ -137,15 +137,15 @@
     text-align: left;
   }
 
+  .footerSection_logoImg {
+  display: block;
+  margin: 0;
+  padding-bottom: 20px;
+  }
 }
 
-/* Small Mobile */
-@media (max-width: 576px) {
+@media (max-width: 748px) {
   .footerSection_main {
-    padding: 40px 0 15px;
-  }
-
-  .footerSection_logoImg {
-    max-width: 120px;
+    display: none;
   }
 }

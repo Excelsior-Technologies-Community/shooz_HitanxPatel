@@ -14,6 +14,7 @@ import CustomerFeedbackSection from "./CustomerFeedbackSection";
 import RecentlyOurPosts from "./RecentlyOurPosts";
 import SubscribeSection from "./SubscribeSection";
 import Footer from "../../components/Footer";
+import FooterMobile from "../../components/FooterMobile";
 
 function Home() {
   return (
@@ -34,6 +35,7 @@ function Home() {
       <RecentlyOurPosts />
       <SubscribeSection />
       <Footer />
+      <FooterMobile />
     </>
   );
 }

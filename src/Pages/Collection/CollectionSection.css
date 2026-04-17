@@ -1,0 +1,57 @@
+.collectionSection______main {
+  padding: 40px 20px;
+  background: white;
+  border-top: 2px solid #e0e0e0;
+}
+
+.collectionSection______breadcrumb {
+  margin-bottom: 30px;
+  font-size: 14px;
+  color: black;
+}
+
+.breadcrumb______home {
+  color: #ffc107;
+}
+
+.collectionCard______wrapper {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.collectionCard______imageBox {
+  overflow: hidden;
+}
+
+.collectionCard______image {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.collectionCard______wrapper:hover .collectionCard______image {
+  transform: scale(1.1);
+}
+
+.collectionCard______overlay {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  background: white;
+  padding: 15px;
+  text-align: center;
+}
+
+.collectionCard______wrapper:hover .collectionCard______overlay {
+  background-color: #ad3e4f;
+  color: white;
+}
+
+.collectionCard______title {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+}

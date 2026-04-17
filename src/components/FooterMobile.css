@@ -1,0 +1,59 @@
+.footerMobile {
+  display: none;
+}
+
+@media (max-width: 748px) {
+
+  .footerMobile {
+    display: block;
+    background-color: #ebebe4;
+    padding: 20px 140px;
+  }
+
+  .footerSection_main {
+    display: none;
+  }
+
+  .footerAccordion_header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 10px 0;
+    cursor: pointer;
+  }
+
+  .footerAccordion_header span {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+  .footerSection_list {
+    margin-top: 10px;
+    text-align: left;
+    font-weight: 400;
+  }
+
+  .footerSection_list li {
+  font-size: 16px;
+  line-height: 1.6;
+ }
+
+  .footerSection_center {
+    margin: 20px 0;
+    text-align: left;
+  }
+
+  .footerSection_paymentsWrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .footerMobile {
+    padding: 20px 40px;
+  }
+}

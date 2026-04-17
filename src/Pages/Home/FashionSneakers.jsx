@@ -1,5 +1,6 @@
 import React from "react";
 import "./FashionSneakers.css";
+import { Link } from "react-router-dom";
 
 const FashionSneakers = () => {
   return (
@@ -22,7 +23,10 @@ const FashionSneakers = () => {
               <div className="fashion-overlay">
                 <span>COMFORT MEETS FASHION</span>
                 <h4>Discover shoes that look great</h4>
-                <a href="#">SHOP NOW</a>
+                {/* <a href="#">SHOP NOW</a> */}
+                <Link to="/collection" className="a">
+                  SHOP NOW
+                </Link>
               </div>
             </div>
           </div>
@@ -33,7 +37,10 @@ const FashionSneakers = () => {
               <div className="fashion-overlay">
                 <span>ELEVATE YOUR LOOK</span>
                 <h4>Find the perfect pair of shoes</h4>
-                <a href="#">SHOP NOW</a>
+                {/* <a href="#">SHOP NOW</a> */}
+                <Link to="/collection" className="a">
+                  SHOP NOW
+                </Link>
               </div>
             </div>
           </div>
@@ -44,7 +51,10 @@ const FashionSneakers = () => {
               <div className="fashion-overlay">
                 <span>STEP INTO STYLE</span>
                 <h4>The latest trends in footwear</h4>
-                <a href="#">SHOP NOW</a>
+                {/* <a href="#">SHOP NOW</a> */}
+                <Link to="/collection" className="a">
+                  SHOP NOW
+                </Link>
               </div>
             </div>
           </div>
@@ -59,7 +69,10 @@ const FashionSneakers = () => {
               <div className="fashion-overlay">
                 <span>SHOP BY BRAND</span>
                 <h4>Find your favorite brands and styles</h4>
-                <a href="#">SHOP NOW</a>
+                {/* <a href="#">SHOP NOW</a> */}
+                <Link to="/collection" className="a">
+                  SHOP NOW
+                </Link>
               </div>
             </div>
           </div>
@@ -70,7 +83,10 @@ const FashionSneakers = () => {
               <div className="fashion-overlay">
                 <span>SALE AND CLEARANCE</span>
                 <h4>Shop our latest deals and discounts</h4>
-                <a href="#">SHOP NOW</a>
+                {/* <a href="#">SHOP NOW</a> */}
+                <Link to="/collection" className="a">
+                  SHOP NOW
+                </Link>
               </div>
             </div>
           </div>

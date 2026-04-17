@@ -1,6 +1,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./ComfortMeetsFashion.css";
+import { Link } from "react-router-dom";
 
 const ComfortMeetsFashion = () => {
   return (
@@ -29,9 +30,12 @@ const ComfortMeetsFashion = () => {
               to keep your feet happy all day long.
             </p>
 
-            <button className="comfort-fashion-btn">
+            {/* <button className="comfort-fashion-btn">
               SHOP NOW →
-            </button>
+            </button> */}
+            <Link to="/collection" className="comfort-fashion-btn">
+              SHOP NOW →
+            </Link>
           </div>
 
         </div>
