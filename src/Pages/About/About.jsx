@@ -1,5 +1,21 @@
+import AnnouncementBar from "../../components/AnnouncementBar";
+import TopBar from "../../components/TopBar";
+import NavBar from "../../components/NavBar";
+import ProductsBanner from "./ProductsBanner";
+import ProductListing_section from "./ProductListing_section";
+import ProductSection from "./ProductSection";
+
 function About() {
-  return <h1>About Page</h1>;
+  return (
+    <>
+      <AnnouncementBar />
+      <TopBar />
+      <NavBar />
+      <ProductsBanner />
+      <ProductListing_section />
+      <ProductSection />
+    </>
+  );
 }
 
 export default About;

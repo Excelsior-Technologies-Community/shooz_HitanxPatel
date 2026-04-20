@@ -7,7 +7,7 @@ import BestWomenSlider from "./BestWomenSlider";
 import Footer from "../../components/Footer";
 import FooterMobile from "../../components/FooterMobile";
 
-function Home() {
+function Collection() {
   return (
     <>
       <AnnouncementBar />
@@ -22,4 +22,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Collection;
