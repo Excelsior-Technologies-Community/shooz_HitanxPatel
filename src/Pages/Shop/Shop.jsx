@@ -4,8 +4,10 @@ import NavBar from "../../components/NavBar";
 import ProductsBanner from "./ProductsBanner";
 import ProductListing_section from "./ProductListing_section";
 import ProductSection from "./ProductSection";
+import Footer from "../../components/Footer";
+import FooterMobile from "../../components/FooterMobile";
 
-function About() {
+function Shop() {
   return (
     <>
       <AnnouncementBar />
@@ -14,8 +16,10 @@ function About() {
       <ProductsBanner />
       <ProductListing_section />
       <ProductSection />
+      <Footer />
+      <FooterMobile />
     </>
   );
 }
 
-export default About;
+export default Shop;

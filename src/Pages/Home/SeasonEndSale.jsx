@@ -38,7 +38,7 @@ const SeasonSale = () => {
                 .slice(colIndex * 3, colIndex * 3 + 3)
                 .map((item) => (
                   <div className="product-item d-flex align-items-center mb-4" key={item.id}>
-                    <img src={item.img} alt="" className="me-3 product-img" />
+                    <img src={item.img} alt="" className="me-3 product-img-sale" />
                     <div>
                       <h6 className="product-title">{item.name}</h6>
                       <p className="product-price">{item.price}</p>

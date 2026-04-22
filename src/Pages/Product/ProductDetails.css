@@ -1,0 +1,249 @@
+.product-details__container {
+  background: #fff;
+}
+
+.product-details__breadcrumb {
+  font-size: 16px;
+}
+
+.product-details__breadcrumb-home {
+  color: #f4a100;
+  cursor: pointer;
+}
+
+.product-details__breadcrumb-separator {
+  color: #999;
+  margin: 0 5px;
+}
+
+.product-details__breadcrumb-current {
+  color: #333;
+}
+
+.product-details__image-box img {
+  max-height: 700px;
+  object-fit: contain;
+}
+
+.product-details__thumb {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  padding: 5px;
+}
+
+.product-details__thumb.active {
+  border: 2px solid black;
+}
+
+.product-details__image-box {
+  position: relative;
+}
+
+.product-details__arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: white;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.product-details__arrow--left {
+  left: 10px;
+}
+
+.product-details__arrow--right {
+  right: 10px;
+}
+
+/* ========================title */
+.product-details__title {
+  font-weight: 600;
+  font-size: 44px;
+}
+
+.product-details__price {
+  font-size: 28px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+
+.product-details__action-section {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+
+.product-details__qty-box {
+  border: 1px solid #ccc;
+}
+
+.product-details__qty-box button {
+  border: none;
+  background: none;
+  padding: 10px 15px;
+}
+
+.product-details__qty-box span {
+  padding: 0 10px;
+}
+
+.product-details__add-btn {
+  background-color: #b33a3a;
+  color: white;
+  padding: 10px 70px;
+}
+
+.product-details__add-btn:hover {
+  background-color: black;
+  color: white;
+}
+
+.product-details__buy-btn {
+  background-color: black;
+  color: white;
+  padding: 10px 70px;
+}
+
+.product-details__buy-btn:hover {
+  background-color: #b33a3a;
+  color: white;
+}
+
+.product-details__wishlist {
+  margin-bottom: 15px;
+}
+
+.product-details__wishlist span {
+  cursor: pointer;
+}
+
+.product-details__wishlist span:hover {
+  color: red;
+}
+
+.product-details__info p {
+  margin: 5px 0;
+  color: #777;
+}
+
+.product-details__accordion-item {
+  border-bottom: 1px solid #eee;
+  padding: 12px 0;
+}
+
+.product-details__accordion-header {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.product-details__accordion-body {
+  margin-top: 10px;
+  color: #666;
+}
+
+.product-details__extra {
+  margin-top: 15px;
+}
+
+.product-details__extra p {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+.product-details__engagement {
+  margin-top: 20px;
+}
+
+.product-details__viewing{
+  font-size: 17px;
+}
+
+.product-details__viewing span {
+  color: red;
+  font-weight: 600;
+}
+
+.product-details__sold {
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #999;
+  font-weight: 500;
+}
+
+.product-details__shipping-offer {
+  margin: 30px 0;
+  font-size: 17px;
+}
+
+.product-details__social span {
+  color: #555;
+  cursor: pointer;
+}
+
+.product-details__payment-box {
+  border: 1px solid #eee;
+  margin-top: 20px;
+  padding: 15px;
+  text-align: center;
+  position: relative;
+}
+
+.product-details__payment-title {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  padding: 0 10px;
+  font-weight: 500;
+}
+
+.product-details__payment-icons img {
+  height: 30px;
+  object-fit: contain;
+}
+
+@media (max-width: 1400px) {
+  .product-details__action-section {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .product-details__add-btn,
+  .product-details__buy-btn {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+  .product-details__payment-box {
+  border: 1px solid #eee;
+  margin-top: 50px;
+  padding: 25px;
+  text-align: center;
+  position: relative;
+}
+
+  .product-details__payment-title {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  padding: 0 10px;
+  font-weight: 500;
+}
+}

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./NavBar.css";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
     const [shopOpen, setShopOpen] = useState(false);
@@ -28,8 +29,8 @@ const Navbar = () => {
             </div>
 
             <ul className="nav-links">
-                <li className="active">Home</li>
-                <li className="shop-menu">Shop <i className="fas fa-chevron-down shop-menu__arrow"></i>
+                <li className="active"><Link to="/">Home</Link></li>
+                <li className="shop-menu"><Link to="/Shop">Shop</Link> <i className="fas fa-chevron-down shop-menu__arrow"></i>
 
                     <div className="shop-menu__dropdown">
 
@@ -104,7 +105,7 @@ const Navbar = () => {
 
                 </li>
                 <li className="product-menu">
-                    Product <i className="fas fa-chevron-down arrow"></i>
+                     <Link to="/Product">Product</Link><i className="fas fa-chevron-down arrow"></i>
 
                     <div className="product-menu__dropdown">
                         <div className="container">
