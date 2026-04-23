@@ -1,0 +1,54 @@
+.saleevent-container {
+  background-color: #fff;
+  margin: 0 70px;
+}
+
+.saleevent-box {
+  background-color: #000;
+  color: #fff;
+  gap: 30px; 
+}
+
+.saleevent-title {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.saleevent-text {
+  font-size: 16px;
+  margin-top: 10px;
+  color: #ddd;
+}
+
+.saleevent-enddeal-btn {
+  background-color: #e8dcb5;
+  color: #fff;
+  padding: 10px 25px;
+  border: none;
+  cursor: default !important;
+}
+
+.saleevent-enddeal-btn:hover {
+  background-color: #e8dcb5;
+  color: #fff;
+  box-shadow: none !important;
+}
+
+.saleevent-enddeal-btn:active {
+  background-color: #e8dcb5 !important;
+  box-shadow: none !important;
+}
+
+.saleevent-shop-btn {
+   border-radius: 0%;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 10px 25px;
+  background: transparent;
+}
+
+@media (max-width: 991px) {
+  .saleevent-box {
+    text-align: center;
+  }
+}

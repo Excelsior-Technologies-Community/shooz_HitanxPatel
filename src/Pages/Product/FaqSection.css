@@ -1,0 +1,25 @@
+.faqSection__wrapper {
+  background-color: #f9f9f9;
+}
+
+.faqSection__title {
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+.faqSection__subtitle {
+  color: #777;
+}
+
+.faqSection__item {
+  transition: all 0.3s ease;
+}
+
+.faqSection__question h5 {
+  font-weight: 600;
+}
+
+.faqSection__icon {
+  font-size: 22px;
+  font-weight: bold;
+}

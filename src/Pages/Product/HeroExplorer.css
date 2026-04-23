@@ -1,0 +1,50 @@
+.heroExplorer__wrapper {
+  position: relative;
+  background: url("https://qx-shooz.myshopify.com/cdn/shop/files/filler2.png?v=1731652695") no-repeat center center/cover;
+  height: 55vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heroExplorer__overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+}
+
+.heroExplorer__content {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+}
+
+.heroExplorer__rating {
+  font-size: 18px;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+
+.heroExplorer__title {
+  font-size: 60px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.heroExplorer__subtitle {
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .heroExplorer__title {
+    font-size: 40px;
+  }
+
+  .heroExplorer__subtitle {
+    font-size: 16px;
+  }
+}
