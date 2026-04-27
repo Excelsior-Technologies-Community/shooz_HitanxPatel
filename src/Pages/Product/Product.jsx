@@ -9,8 +9,10 @@ import FeaturesSection from "./FeaturesSection";
 import HeroExplorer from "./HeroExplorer";
 import FaqSection from "./FaqSection";
 import SaleEvent from "./SaleEvent";
-// import Footer from "../../components/Footer";
-// import FooterMobile from "../../components/FooterMobile";
+import YouMayAlsoLikeSection from "./YouMayAlsoLikeSection";
+import RecentlyViewed from "./RecentlyViewed";
+import Footer from "../../components/Footer";
+import FooterMobile from "../../components/FooterMobile";
 
 function Product() {
   return (
@@ -26,8 +28,10 @@ function Product() {
       <HeroExplorer />
       <FaqSection />
       <SaleEvent />
-      {/* <Footer />
-      <FooterMobile /> */}
+      <YouMayAlsoLikeSection />
+      <RecentlyViewed />
+      <Footer />
+      <FooterMobile />
     </>
   );
 }

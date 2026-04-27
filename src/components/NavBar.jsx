@@ -193,7 +193,7 @@ const Navbar = () => {
                     </div>
                 </li>
                 <li className="blog-menu">
-                    Blog <i className="fas fa-chevron-down arrow"></i>
+                    <Link to="/Blog">Blog</Link> <i className="fas fa-chevron-down arrow"></i>
 
                     <div className="blog-menu__dropdown">
                         <div className="container">
