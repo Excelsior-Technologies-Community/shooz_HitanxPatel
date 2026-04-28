@@ -8,6 +8,13 @@
   align-items: center;
 }
 
+/* @media (max-width: 576px) {
+  .heroSection__wrapper {
+    justify-content: flex-start;
+    padding-left: 20px;
+  }
+} */
+
 .heroSection__wrapper::before {
   content: "";
   position: absolute;
@@ -35,8 +42,8 @@
   justify-content: left;
   gap: 20px;
   font-size: 14px;
-  flex-wrap: nowrap;
-  overflow-x: auto; 
+  display: flex;
+  flex-wrap: wrap; 
 }
 
 .heroSection__metaItem {
@@ -45,7 +52,6 @@
   gap: 6px;
   color: #fff!important;
   white-space: nowrap;
-  flex-shrink: 0;
 }
 
 .heroSection__icon {

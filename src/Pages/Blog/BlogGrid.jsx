@@ -89,7 +89,7 @@ const BlogGrid = () => {
                     READ MORE →
                   </Button> */}
 
-                  <Link to="/BlogMain" className="btn blogGrid__btn">
+                  <Link to="/blog-details" className="btn blogGrid__btn">
                     READ MORE →
                   </Link>
 

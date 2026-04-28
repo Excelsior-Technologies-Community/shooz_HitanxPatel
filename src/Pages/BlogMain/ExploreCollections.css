@@ -1,0 +1,101 @@
+.exploreCollections__wrapper {
+  padding: 40px 0;
+  padding-left: 25%;
+  padding-right: 25%;
+}
+
+.exploreCollections__title {
+  font-size: 32px;
+  font-weight: 600;
+  text-decoration: underline;
+  margin-bottom: 20px;
+}
+
+.exploreCollections__shareRow {
+  margin-bottom: 10px;
+}
+
+.exploreCollections__shareRow-mob {
+  margin-bottom: 10px;
+}
+
+.exploreCollections__tagIcon {
+  font-size: 18px;
+  color: #777;
+}
+
+.exploreCollections__shareItem {
+  margin-left: 15px;
+  font-size: 14px;
+  color: #555;
+  cursor: pointer;
+}
+
+.exploreCollections__shareItem svg {
+  margin-right: 5px;
+  color: black;
+}
+
+.exploreCollections__divider {
+  margin: 20px 0;
+}
+
+.exploreCollections__postSection {
+  padding-top: 20px;
+}
+
+.exploreCollections__img {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+.exploreCollections__prevText {
+  font-size: 12px;
+  color: gray;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.exploreCollections__prevText:hover {
+  color: black;
+}
+
+.exploreCollections__postTitle {
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.exploreCollections__verticalDivider {
+  height: 60px;
+  width: 1px;
+  background-color: #ccc;
+  margin-left: 0; 
+}
+
+.exploreCollections__shareCol {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px;
+}
+
+@media (max-width: 991px) {
+
+  .exploreCollections__img {
+    display: none;
+  }
+
+  .exploreCollections__postTitle {
+    display: none;
+  }
+
+  .exploreCollections__verticalDivider{
+    display: none;
+  }
+
+  .exploreCollections__shareRow{
+    display: none;
+  }
+}

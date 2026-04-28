@@ -44,7 +44,7 @@ const HeroSection = () => {
                 {/* <button className="btn heroSection__btn">
                   READ MORE →
                 </button> */}
-                <Link to="/BlogMain" className="btn heroSection__btn">
+                <Link to="/blog-details" className="btn heroSection__btn">
                   READ MORE →
                 </Link>
               </div>
@@ -90,7 +90,7 @@ const HeroSection = () => {
                 {/* <button className="btn heroSection__btn">
                   READ MORE →
                 </button> */}
-                <Link to="/BlogMain" className="btn heroSection__btn">
+                <Link to="/blog-details" className="btn heroSection__btn">
                   READ MORE →
                 </Link>
               </div>
@@ -136,7 +136,7 @@ const HeroSection = () => {
                 {/* <button className="btn heroSection__btn">
                   READ MORE →
                 </button> */}
-                <Link to="/BlogMain" className="btn heroSection__btn">
+                <Link to="/blog-details" className="btn heroSection__btn">
                   READ MORE →
                 </Link>
               </div>

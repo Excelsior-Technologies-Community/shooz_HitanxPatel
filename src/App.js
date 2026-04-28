@@ -15,7 +15,7 @@ function App() {
         <Route path="/Collection" element={<Collection />} />
         <Route path="/Product" element={<Product />} />
         <Route path="/Blog" element={<Blog />} />
-        <Route path="/BlogMain" element={<BlogMain />} />
+        <Route path="/blog-details" element={<BlogMain />} />
       </Routes>
     </BrowserRouter>
   );
