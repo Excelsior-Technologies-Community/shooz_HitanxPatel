@@ -1,0 +1,88 @@
+.mapSection_wrapper {
+  position: relative;
+}
+
+.mapSection_mapContainer {
+  position: relative;
+  width: 100%;
+  height: 500px;
+}
+
+.mapSection_map {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.mapSection_card {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+  background: white;
+  padding: 40px;
+  width: 400px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.mapSection_title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.mapSection_address {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.mapSection_timing {
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+
+.mapSection_button {
+  background-color: #b33a3a;
+  border: none;
+  padding: 10px 20px;
+  font-weight: 600;
+  border-radius: 0%;
+}
+
+.mapSection_button:hover {
+  background-color: black;
+}
+
+@media (max-width: 991px) {
+  .mapSection_card {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    padding: 50px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 749px) {
+  .mapSection_mapContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mapSection_card {
+    position: static;
+    transform: none;
+    width: 100%;
+    max-width: 100%;
+    padding: 30px;
+    text-align: center;
+    box-shadow: none;
+    order: 1; 
+  }
+
+  .mapSection_map {
+    height: 450px;
+    order: 2; 
+  }
+}

@@ -1,12 +1,13 @@
 import AnnouncementBar from "../../components/AnnouncementBar";
 import TopBar from "../../components/TopBar";
 import NavBar from "../../components/NavBar";
-import HeroSection from "./HeroSection";
+import BlogMainHeroSection from "./BlogMainHeroSection";
 import MixedContentSection from "./MixedContentSection";
 import ExploreCollections from "./ExploreCollections";
 import FeedbackSection from "./FeedbackSection";
-// import Footer from "../../components/Footer";
-// import FooterMobile from "../../components/FooterMobile";
+import YouMayAlsoLike from "./YouMayAlsoLike";
+import Footer from "../../components/Footer";
+import FooterMobile from "../../components/FooterMobile";
 
 function BlogMain() {
   return (
@@ -14,12 +15,13 @@ function BlogMain() {
       <AnnouncementBar />
       <TopBar />
       <NavBar />
-      <HeroSection />
+      <BlogMainHeroSection />
       <MixedContentSection />
       <ExploreCollections />
       <FeedbackSection />
-      {/* <Footer />
-      <FooterMobile /> */}
+      <YouMayAlsoLike />
+      <Footer />
+      <FooterMobile />
     </>
   );
 }

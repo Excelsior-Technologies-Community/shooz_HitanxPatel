@@ -1,9 +1,9 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import { FaCalendarAlt, FaUser, FaComments } from "react-icons/fa";
-import "./HeroSection.css";
+import "./BlogMainHeroSection.css";
 
-const HeroSection = () => {
+const BlogMainHeroSection = () => {
   return (
     <div className="heroSection__wrapper">
       <Container className="heroSection__content">
@@ -36,4 +36,4 @@ const HeroSection = () => {
   );
 };
 
-export default HeroSection;
+export default BlogMainHeroSection;

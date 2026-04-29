@@ -256,7 +256,7 @@ const Navbar = () => {
                     Pages <i className="fas fa-chevron-down arrow"></i>
 
                     <ul className="pages-dropdown">
-                        <li>About Us 1</li>
+                        <li><Link to="/AboutUs">About Us 1</Link></li>
                         <li>About Us 2</li>
                         <li>About Us 3</li>
                         <li>Contact</li>

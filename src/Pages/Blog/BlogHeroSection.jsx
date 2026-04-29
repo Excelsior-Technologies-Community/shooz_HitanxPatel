@@ -1,9 +1,9 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./HeroSection.css";
+import "./BlogHeroSection.css";
 import { Link } from "react-router-dom";
 
-const HeroSection = () => {
+const BlogHeroSection = () => {
   return (
     <div className="heroSection__wrapper">
       <div
@@ -175,4 +175,4 @@ const HeroSection = () => {
   );
 };
 
-export default HeroSection;
+export default BlogHeroSection;
