@@ -259,8 +259,8 @@ const Navbar = () => {
                         <li><Link to="/AboutUs">About Us 1</Link></li>
                         <li>About Us 2</li>
                         <li>About Us 3</li>
-                        <li>Contact</li>
-                        <li>Faqs</li>
+                        <li><Link to="/Contact">Contact</Link></li>
+                        <li><Link to="/FAQ">Faqs</Link></li>
                         <li>Lookbook</li>
                         <li>Size Guide</li>
                         <li>Wishlist</li>

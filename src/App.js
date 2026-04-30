@@ -7,6 +7,8 @@ import Product from "./Pages/Product/Product";
 import Blog from "./Pages/Blog/Blog"
 import BlogMain from "./Pages/BlogMain/BlogMain"
 import AboutUs from "./Pages/About us/AboutUs";
+import Contact from "./Pages/Contact/Contact";
+import FAQ from "./Pages/FAQ/FAQ";
 function App() {
   return (
     <BrowserRouter>
@@ -18,6 +20,8 @@ function App() {
         <Route path="/Blog" element={<Blog />} />
         <Route path="/blog-details" element={<BlogMain />} />
         <Route path="/AboutUs" element={<AboutUs />} />
+        <Route path="/Contact" element={<Contact />} />
+        <Route path="/FAQ" element={<FAQ />} />
       </Routes>
     </BrowserRouter>
   );

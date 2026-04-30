@@ -68,21 +68,25 @@
   .mapSection_mapContainer {
     display: flex;
     flex-direction: column;
+    height: auto;
   }
 
   .mapSection_card {
     position: static;
     transform: none;
-    width: 100%;
-    max-width: 100%;
+    width: 80%;
     padding: 30px;
     text-align: center;
     box-shadow: none;
     order: 1; 
+    margin: 0 auto;
   }
 
   .mapSection_map {
-    height: 450px;
+    height: 400px;
+    width: 80%;
     order: 2; 
+    display: block;
+    margin: 0 auto;
   }
 }

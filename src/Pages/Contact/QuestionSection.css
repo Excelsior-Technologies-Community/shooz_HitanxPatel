@@ -1,0 +1,47 @@
+.QuestionSection_container {
+    margin: 75px 15%;
+}
+
+.QuestionSection_subtitle {
+  letter-spacing: 2px;
+  font-size: 16px;
+  font-weight: 400;
+  color: gray;
+}
+
+.QuestionSection_title {
+  font-weight: 700;
+  font-size: 42px;
+}
+
+.QuestionSection_input,
+.QuestionSection_textarea {
+  border-radius: 0;
+  padding: 14px;
+}
+
+.QuestionSection_button {
+  background-color: #b23a48;
+  color: white;
+  padding: 12px 40px;
+  border: none;
+  border-radius: 0;
+}
+
+.QuestionSection_button:hover {
+  background-color: black;
+  color: white;
+}
+
+.QuestionSection_footer {
+  font-size: 16px;
+}
+
+.QuestionSection_link {
+  color: gray;
+  text-decoration: underline;
+}
+
+.QuestionSection_link:hover {
+  color: black;
+}
