@@ -1,0 +1,41 @@
+.seasonStyleSection {
+  background-color: #f7f7f7;
+}
+
+.seasonStyleSection__title {
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.seasonStyleSection__subtitle {
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.seasonStyleSection__card {
+  text-align: center;
+}
+
+.seasonStyleSection__image {
+  width: 100%;
+  height: auto;
+}
+
+.seasonStyleSection__cardTitle {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.seasonStyleSection__cardText {
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.seasonStyleSection__btn {
+  color: #c0392b;
+  text-decoration: none;
+  font-weight: 500;
+  border-bottom: 1px solid #c0392b;
+  transition: 0.3s;
+}

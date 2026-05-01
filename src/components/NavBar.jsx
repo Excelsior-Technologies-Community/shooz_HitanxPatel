@@ -261,7 +261,7 @@ const Navbar = () => {
                         <li>About Us 3</li>
                         <li><Link to="/Contact">Contact</Link></li>
                         <li><Link to="/FAQ">Faqs</Link></li>
-                        <li>Lookbook</li>
+                        <li><Link to="/Lookbook">Lookbook</Link></li>
                         <li>Size Guide</li>
                         <li>Wishlist</li>
                     </ul>

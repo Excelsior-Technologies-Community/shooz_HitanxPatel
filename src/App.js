@@ -9,6 +9,7 @@ import BlogMain from "./Pages/BlogMain/BlogMain"
 import AboutUs from "./Pages/About us/AboutUs";
 import Contact from "./Pages/Contact/Contact";
 import FAQ from "./Pages/FAQ/FAQ";
+import LookBook from "./Pages/LookBook/LookBook";
 function App() {
   return (
     <BrowserRouter>
@@ -22,6 +23,7 @@ function App() {
         <Route path="/AboutUs" element={<AboutUs />} />
         <Route path="/Contact" element={<Contact />} />
         <Route path="/FAQ" element={<FAQ />} />
+        <Route path="/LookBook" element={<LookBook />} />
       </Routes>
     </BrowserRouter>
   );

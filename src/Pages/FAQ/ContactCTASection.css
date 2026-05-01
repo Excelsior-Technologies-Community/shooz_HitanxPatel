@@ -1,0 +1,46 @@
+.contactCTASection_container {
+}
+
+.contactCTASection_subtitle {
+  font-size: 14px;
+  letter-spacing: 2px;
+  color: #666;
+}
+
+.contactCTASection_title {
+  font-size: 42px;
+  font-weight: 500;
+  color: #000;
+}
+
+@media (max-width: 576px) {
+  .contactCTASection_title {
+    font-size: 26px;
+  }
+}
+
+.contactCTASection_heading {
+  font-size: 28px;
+  font-weight: 600;
+  color: #000;
+}
+
+.contactCTASection_text {
+  color: #777;
+  font-size: 16px;
+}
+
+.contactCTASection_btn {
+  background-color: #b23a48;
+  color: #fff;
+  padding: 12px 28px;
+  border: none;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: 0.3s;
+}
+
+.contactCTASection_btn:hover {
+  background-color: #000;
+  color: #fff;
+}

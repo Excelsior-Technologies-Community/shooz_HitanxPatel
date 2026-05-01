@@ -1,0 +1,39 @@
+.chicComfortSection {
+  background-color: #d9d3cc;
+}
+
+.chicComfortSection_tag {
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  color: gray;
+  padding: 4px 10px;
+  border-radius: 2px;
+}
+
+.chicComfortSection_title {
+  font-size: 36px;
+  font-weight: 600;
+  color: #000;
+}
+
+.chicComfortSection_subtitle {
+  font-size: 18px;
+  color: #333;
+}
+
+.chicComfortSection_description {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .chicComfortSection_title {
+    font-size: 26px;
+  }
+
+  .chicComfortSection_subtitle {
+    font-size: 16px;
+  }
+}
