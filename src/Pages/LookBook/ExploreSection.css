@@ -1,0 +1,95 @@
+.ExploreSection_main {
+  padding: 60px 0;
+}
+
+.ExploreSection_heading {
+  margin-bottom: 40px;
+}
+
+.ExploreSection_subtitle {
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: gray;
+}
+
+.ExploreSection_title {
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.ExploreSection_card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.ExploreSection_card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.ExploreSection_card:hover img {
+  transform: scale(1.08);
+}
+
+.ExploreSection_large {
+  height: 650px;
+  width: 100%;
+}
+
+.ExploreSection_large img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.ExploreSection_right {
+  height: 650px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.ExploreSection_overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  z-index: 2;
+}
+
+.ExploreSection_titleText {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+  transition: transform 0.4s ease;
+}
+
+.ExploreSection_subText {
+  margin: 0;
+  font-size: 14px;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: 0.3s;
+  transition: all 0.4s ease;
+}
+
+.ExploreSection_card:hover .ExploreSection_subText {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.ExploreSection_card:hover .ExploreSection_titleText {
+  transform: translateY(-10px);
+}
+
+.ExploreSection_card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.2);
+}

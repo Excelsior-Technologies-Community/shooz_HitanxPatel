@@ -5,6 +5,9 @@ import LookbookHeaderSection from "./LookbookHeaderSection";
 import SeasonStyleSection from "./SeasonStyleSection";
 import ChicComfortSection from "./ChicComfortSection";
 import TimelessSection from "./TimelessSection";
+import FashionForwardFitness from "./FashionForwardFitness";
+import ExploreSection from "./ExploreSection";
+import BestSeller from "./BestSeller";
 // import Footer from "../../components/Footer";
 // import FooterMobile from "../../components/FooterMobile";
 
@@ -18,6 +21,9 @@ function LookBook() {
       <SeasonStyleSection />
       <ChicComfortSection />  
       <TimelessSection />
+      <FashionForwardFitness />
+      <ExploreSection />
+      <BestSeller />
       {/* <Footer />
       <FooterMobile /> */}
     </>
