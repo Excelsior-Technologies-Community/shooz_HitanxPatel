@@ -10,6 +10,8 @@ import AboutUs from "./Pages/About us/AboutUs";
 import Contact from "./Pages/Contact/Contact";
 import FAQ from "./Pages/FAQ/FAQ";
 import LookBook from "./Pages/LookBook/LookBook";
+import SizeGuide from "./Pages/Size Guide/SizeGuide";
+import WishList from "./Pages/WishList/WishList";
 function App() {
   return (
     <BrowserRouter>
@@ -24,6 +26,8 @@ function App() {
         <Route path="/Contact" element={<Contact />} />
         <Route path="/FAQ" element={<FAQ />} />
         <Route path="/LookBook" element={<LookBook />} />
+        <Route path="/SizeGuide" element={<SizeGuide />} />
+        <Route path="/WishList" element={<WishList />} />
       </Routes>
     </BrowserRouter>
   );

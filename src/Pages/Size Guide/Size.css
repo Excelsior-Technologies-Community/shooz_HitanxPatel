@@ -1,0 +1,42 @@
+.sizeguide_container {
+  background-color: #fff;
+}
+
+.sizeguide_breadcrumb {
+  font-size: 14px;
+  color: #888;
+}
+
+.sizeguide_title {
+  font-weight: 600;
+  font-size: 32px;
+}
+
+.sizeguide_desc {
+  color: #555;
+}
+
+.sizeguide_link {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.sizeguide_table {
+  border: 1px solid #ddd;
+}
+
+.sizeguide_table_head {
+  background-color: #f2f2f2;
+}
+
+.sizeguide_table th,
+.sizeguide_table td {
+  padding: 15px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.sizeguide_table th{
+    background-color: #e9ecf0;
+    color: #495057;
+}

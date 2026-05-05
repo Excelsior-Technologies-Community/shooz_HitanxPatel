@@ -1,0 +1,74 @@
+.login-modal .modal-content {
+  padding: 30px 35px;
+  max-width: 500px;
+  margin: auto;
+}
+
+.login-title {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.login-subtitle {
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.login-input {
+  height: 48px;
+  border-radius: 2px;
+  border: 1px solid #ddd;
+  margin-bottom: 18px;
+  padding: 10px 12px;
+  font-size: 14px;
+}
+
+.forgot-link {
+  font-size: 13px;
+  color: #777;
+  text-decoration: none;
+  text-decoration: underline;
+}
+
+.login-btn {
+  width: 100%;
+  height: 48px;
+  background-color: #b23b48;
+  border: none;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: white;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: black;
+}
+
+.register-text {
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+.register-text a {
+  text-decoration: underline;
+  color: #000;
+}
+
+.register-text a:hover {
+  color: #777;
+}
+
+/* Close button */
+.close-btn {
+  position: absolute;
+  top: 12px;
+  right: 18px;
+  border: none;
+  background: none;
+  font-size: 18px;
+  cursor: pointer;
+}

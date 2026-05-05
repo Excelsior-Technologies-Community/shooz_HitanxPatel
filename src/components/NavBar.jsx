@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import LoginModal from "./LoginModal";
 import "./NavBar.css";
 import { Link } from "react-router-dom";
 
@@ -17,6 +18,7 @@ const Navbar = () => {
     const [gridLayoutOpen, setGridLayoutOpen] = useState(false);
     const [articleOpen, setArticleOpen] = useState(false);
     const [pagesOpen, setPagesOpen] = useState(false);
+    const [showLogin, setShowLogin] = useState(false);
     return (
     <>
         <div className="navbar">
@@ -262,8 +264,8 @@ const Navbar = () => {
                         <li><Link to="/Contact">Contact</Link></li>
                         <li><Link to="/FAQ">Faqs</Link></li>
                         <li><Link to="/Lookbook">Lookbook</Link></li>
-                        <li>Size Guide</li>
-                        <li>Wishlist</li>
+                        <li><Link to="/SizeGuide">Size Guide</Link></li>
+                        <li><Link to="/Wishlist">Wishlist</Link></li>
                     </ul>
                 </li>
                 <li className="buy-now">Buy Now <span className="sale-badge">Sale</span>
@@ -272,9 +274,21 @@ const Navbar = () => {
 
             <div className="nav-icons">
                 <i className="fas fa-search"></i>
-                <i className="far fa-user"></i>
+                {/* <i className="far fa-user"></i> */}
+                <i
+                    className="far fa-user"
+                    style={{ cursor: "pointer" }}
+                    onClick={() => setShowLogin(true)}
+                ></i>
+                <LoginModal  
+                show={showLogin}  
+                handleClose={() => setShowLogin(false)}  
+                />
                 <div className="icon-box">
-                    <i className="far fa-heart"></i>
+                    {/* <i className="far fa-heart"></i> */}
+                    <Link to="/WishList" className="Navbar_heartIcon">
+                        <i className="far fa-heart"></i>
+                    </Link>
                     <span className="badge">0</span>
                 </div>
                 <i className="fas fa-shopping-bag">

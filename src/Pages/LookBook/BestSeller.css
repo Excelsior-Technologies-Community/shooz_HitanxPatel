@@ -17,7 +17,7 @@
   margin-bottom: 25px;
 }
 
-.you-may-like-card {
+.you-may-like-card_1 {
   background: #fff;
   width: 100%;
 }
@@ -55,11 +55,11 @@
   opacity: 0;
 }
 
-.you-may-like-card:hover .you-may-like-hover-img {
+.you-may-like-card_1:hover .you-may-like-hover-img {
   opacity: 1;
 }
 
-.you-may-like-card:hover .you-may-like-primary-img {
+.you-may-like-card_1:hover .you-may-like-primary-img {
   opacity: 0;
 }
 
@@ -112,7 +112,7 @@
   transition: 0.3s;
 }
 
-.you-may-like-card:hover .you-may-like-hover-actions {
+.you-may-like-card_1:hover .you-may-like-hover-actions {
   opacity: 1;
   transform: translateY(0);
 }
@@ -157,9 +157,30 @@
   flex-wrap: nowrap; 
 }
 
-.you-may-like-card {
-  min-width: 250px;
-  flex: 0 0 auto;
+.you-may-like-card_1 {
+  flex: 0 0 calc(25% - 15px);
+  max-width: calc(25% - 15px);
+}
+
+@media (max-width: 1024px) {
+  .you-may-like-card_1 {
+    flex: 0 0 calc(33.33% - 15px);
+    max-width: calc(33.33% - 15px);
+  }
+}
+
+@media (max-width: 768px) {
+  .you-may-like-card_1 {
+    flex: 0 0 calc(50% - 15px);
+    max-width: calc(50% - 15px);
+  }
+}
+
+@media (max-width: 480px) {
+  .you-may-like-card_1 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
 }
 
 .you-may-like-scroll::-webkit-scrollbar {

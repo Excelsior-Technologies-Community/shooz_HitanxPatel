@@ -45,6 +45,38 @@ const BestSeller = () => {
       img1: "https://qx-shooz.myshopify.com/cdn/shop/files/product-18_31b99edb-0192-4e99-a026-cbd70e3a5624.jpg?v=1731311357&width=540",
       img2: "https://qx-shooz.myshopify.com/cdn/shop/files/product-22.jpg?v=1731310991&width=540",
     },
+    {
+      id: 5,
+      price: "$21.00",
+      title: "Classic Leather Sneakers",
+      brand: "UrbanStep",
+      img1: "https://qx-shooz.myshopify.com/cdn/shop/files/product-19_49ae4265-2610-48a8-b934-1a24b6136832.jpg?v=1731311550&width=540",
+      img2: "https://qx-shooz.myshopify.com/cdn/shop/files/product-26_a72ab182-4323-4754-aa41-d64401571e17.jpg?v=1731311225&width=540",
+    },
+    {
+      id: 6,
+      price: "$25.00",
+      title: "Classic White Tennis Sneakers",
+      brand: "SportyFeet",
+      img1: "https://qx-shooz.myshopify.com/cdn/shop/files/product-26_a72ab182-4323-4754-aa41-d64401571e17.jpg?v=1731311225&width=540",
+      img2: "https://qx-shooz.myshopify.com/cdn/shop/files/product-19_49ae4265-2610-48a8-b934-1a24b6136832.jpg?v=1731311550&width=540",
+    },
+    {
+      id: 7,
+      price: "$15.00",
+      title: "Chunky Platform Sandals",
+      brand: "BoldWalks",
+      img1: "https://qx-shooz.myshopify.com/cdn/shop/files/product-22.jpg?v=1731310991&width=540",
+      img2: "https://qx-shooz.myshopify.com/cdn/shop/files/product-18_31b99edb-0192-4e99-a026-cbd70e3a5624.jpg?v=1731311357&width=540",
+    },
+    {
+      id: 8,
+      price: "$15.00",
+      title: "Cushioned Trail Running Shoes",
+      brand: "TrailGear",
+      img1: "https://qx-shooz.myshopify.com/cdn/shop/files/product-18_31b99edb-0192-4e99-a026-cbd70e3a5624.jpg?v=1731311357&width=540",
+      img2: "https://qx-shooz.myshopify.com/cdn/shop/files/product-22.jpg?v=1731310991&width=540",
+    },
   ];
 
   return (
@@ -67,13 +99,9 @@ const BestSeller = () => {
         
         <div className="you-may-like-scroll" ref={scrollRef}>
 
-        {products.slice(0, 5).map((item, index) => (
-        <div className="you-may-like-card" key={index}>
-                <div className="row">
                 {products.map((item) => (
-                    <div className="col-lg-3 col-6 mb-4" key={item.id}>
 
-                    <div className="you-may-like-card">
+                    <div className="you-may-like-card_1" key={item.id}>
 
                         <div className="you-may-like-img-wrapper">
 
@@ -132,12 +160,7 @@ const BestSeller = () => {
                         </div>
 
                     </div>
-
-                    </div>
                 ))}
-                </div>
-            </div>
-        ))}
 
         </div>
 

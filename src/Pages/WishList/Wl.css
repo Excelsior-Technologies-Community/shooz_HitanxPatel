@@ -1,0 +1,41 @@
+.Wishlist_container {
+  border-top: 1px solid black ;
+  padding: 40px 0;
+}
+
+.Wishlist_breadcrumb {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.Wishlist_home {
+  color: orange;
+  cursor: pointer;
+}
+
+.Wishlist_current {
+  color: #333;
+}
+
+.Wishlist_slash {
+  margin: 0 5px;
+}
+
+.Wishlist_title {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.Wishlist_emptyWrapper {
+  margin-top: 20px;
+}
+
+.Wishlist_emptyBox {
+  display: inline-block;
+  background-color: #f5e6c8;
+  padding: 12px 25px;
+  border-radius: 6px;
+  color: #a0742d;
+  font-size: 14px;
+}

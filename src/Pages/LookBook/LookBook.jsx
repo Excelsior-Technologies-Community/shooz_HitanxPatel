@@ -8,8 +8,9 @@ import TimelessSection from "./TimelessSection";
 import FashionForwardFitness from "./FashionForwardFitness";
 import ExploreSection from "./ExploreSection";
 import BestSeller from "./BestSeller";
-// import Footer from "../../components/Footer";
-// import FooterMobile from "../../components/FooterMobile";
+import FeaturedPicks from "./FeaturedPicks";
+import Footer from "../../components/Footer";
+import FooterMobile from "../../components/FooterMobile";
 
 function LookBook() {
   return (
@@ -24,8 +25,9 @@ function LookBook() {
       <FashionForwardFitness />
       <ExploreSection />
       <BestSeller />
-      {/* <Footer />
-      <FooterMobile /> */}
+      <FeaturedPicks />
+      <Footer />
+      <FooterMobile />
     </>
   );
 }
