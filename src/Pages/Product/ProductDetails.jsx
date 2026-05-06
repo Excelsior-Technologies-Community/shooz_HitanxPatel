@@ -2,8 +2,26 @@ import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./ProductDetails.css";
 import { FaFacebookF, FaTwitter, FaPinterestP } from "react-icons/fa";
+import { useWishlist } from "../../Context/WishlistContext";
+import { useCart } from "../../Context/CartContext";
+import { Link } from "react-router-dom";
 
 const ProductDetails = () => {
+
+  const { addToWishlist, wishlistItems } = useWishlist();
+  const { addToCart } = useCart();
+
+  const product = {
+  id: 1,
+  title: "Breathable Mesh Slip-Ons",
+  price: "$25.00",
+  image: "https://qx-shooz.myshopify.com/cdn/shop/files/product-1_831d6162-6f44-4896-ac4c-88eb8a35a6a9.jpg?v=1731310932",
+  };
+
+  const alreadyInWishlist = wishlistItems.find(
+    (item) => item.id === product.id
+  );
+
   const images = [
     "https://qx-shooz.myshopify.com/cdn/shop/files/product-1_831d6162-6f44-4896-ac4c-88eb8a35a6a9.jpg?v=1731310932",
     "https://qx-shooz.myshopify.com/cdn/shop/files/product-18_be1e3b54-5764-4f9d-b77d-f23718b8bd6f.jpg?v=1731310946",
@@ -79,10 +97,10 @@ const ProductDetails = () => {
           <div className="product-details__right">
 
             <h2 className="product-details__title">
-              Breathable Mesh Slip-Ons
+              {product.title}
             </h2>
 
-            <h4 className="product-details__price">$25.00</h4>
+            <h4 className="product-details__price">{product.price}</h4>
 
             <div className="product-details__action-section d-flex align-items-center gap-3 flex-wrap">
               
@@ -90,9 +108,13 @@ const ProductDetails = () => {
                 <button onClick={() => setQty(qty > 1 ? qty - 1 : 1)}>-</button>
                 <span>{qty}</span>
                 <button onClick={() => setQty(qty + 1)}>+</button>
-              </div>
+              </div>  
 
-              <button className="btn product-details__add-btn">
+              {/* <button className="btn product-details__add-btn">
+                ADD TO CART
+              </button> */}
+
+              <button className="btn product-details__add-btn" onClick={() => addToCart(product)}>
                 ADD TO CART
               </button>
 
@@ -100,8 +122,22 @@ const ProductDetails = () => {
                 BUY IT NOW
               </button>
 
-              <div className="product-details__wishlist d-flex gap-4">
-                <span>♡ Add To Wishlist</span>
+              <div className="product-details__wishlist d-flex gap-4">  
+                {alreadyInWishlist ? (
+                  <Link
+                    to="/wishlist"
+                    className="text-dark text-decoration-none"
+                  >
+                    ❤️ Go To Wishlist
+                  </Link>
+                ) : (
+                  <span
+                    onClick={() => addToWishlist(product)}
+                    style={{ cursor: "pointer" }}
+                  >
+                    ♡ Add To Wishlist
+                  </span>
+                )}
                 <span>⇄ Compare</span>
               </div>
             </div>

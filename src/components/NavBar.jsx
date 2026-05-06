@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import LoginModal from "./LoginModal";
 import "./NavBar.css";
 import { Link } from "react-router-dom";
+import { useWishlist } from "../Context/WishlistContext";
+import { useCart } from "../Context/CartContext";
 
 const Navbar = () => {
     const [shopOpen, setShopOpen] = useState(false);
@@ -19,6 +21,14 @@ const Navbar = () => {
     const [articleOpen, setArticleOpen] = useState(false);
     const [pagesOpen, setPagesOpen] = useState(false);
     const [showLogin, setShowLogin] = useState(false);
+    const { wishlistItems } = useWishlist();
+    const [cartOpen, setCartOpen] = useState(false);
+    const {cartItems, removeFromCart, increaseQty, decreaseQty} = useCart();
+    const totalPrice = cartItems.reduce(
+        (total, item) =>
+            total + parseFloat(item.price.replace("$", "")) * item.qty,
+        0
+    );
     return (
     <>
         <div className="navbar">
@@ -289,10 +299,15 @@ const Navbar = () => {
                     <Link to="/WishList" className="Navbar_heartIcon">
                         <i className="far fa-heart"></i>
                     </Link>
-                    <span className="badge">0</span>
+                    <span className="badge">
+                        {wishlistItems.length}
+                    </span>
                 </div>
-                <i className="fas fa-shopping-bag">
-                <span>(0)</span>
+                <i
+                className="fas fa-shopping-bag"
+                onClick={() => setCartOpen(true)}
+                >
+                <span>({cartItems.length})</span>
                 </i>
             </div>
 
@@ -645,6 +660,128 @@ const Navbar = () => {
                 </ul>
 
             </div>
+        </div>
+
+        <div className={`cart_sidebar ${cartOpen ? "show" : ""}`}>
+
+            <div className="cart_header">
+
+                <h4>
+                Cart ({cartItems.length})
+                </h4>
+
+                <span onClick={() => setCartOpen(false)}>
+                ✕
+                </span>
+
+            </div>
+
+            {cartItems.length === 0 ? (
+
+                <div className="empty_cart">
+                No products in the cart.
+                </div>
+
+            ) : (
+
+            <>    
+
+                <div className="cart_shipping_text">
+                    📦
+                    <span>
+                        Spend $850.00 for Free Shipping
+                    </span>
+                </div>
+
+                <div className="shipping_bar"></div>
+                
+                {cartItems.map((item) => (
+
+                <div className="cart_item" key={item.id}>
+
+                <img src={item.image} alt="" />
+
+                <div className="cart_item_content">
+
+                    <h5>{item.title}</h5>
+
+                    <p>
+                    {item.price} × {item.qty}
+                    </p>
+
+                    <div className="qty_box">
+
+                    <button
+                        onClick={() => decreaseQty(item.id)}
+                    >
+                        -
+                    </button>
+
+                    <span>{item.qty}</span>
+
+                    <button
+                        onClick={() => increaseQty(item.id)}
+                    >
+                        +
+                    </button>
+
+                    </div>
+
+                </div>
+
+                <button
+                    className="remove_btn"
+                    onClick={() => removeFromCart(item.id)}
+                >
+                    Remove
+                </button>
+
+                </div>
+
+                ))}
+
+                <div className="cart_bottom">
+
+                    <h2 className="like_text">
+                        You may also like
+                    </h2>
+
+                    <div className="cart_options">
+
+                        <span>📒 Order Note</span>
+
+                        <span>🏷 Coupon</span>
+
+                        <span>📦 Shipping</span>
+
+                    </div>
+
+                    <div className="cart_total">
+
+                        <div>
+
+                        <p className="p1">Total:</p>
+
+                        <p>
+                            Taxes and shipping calculated at checkout
+                        </p>
+
+                        </div>
+
+                        <p className="p1">${totalPrice.toFixed(2)}</p>
+
+                    </div>
+
+                    <button className="checkout_btn">
+                        CHECK OUT
+                    </button>
+
+                </div>
+
+            </>
+
+            )}
+
         </div>
     </>
     );

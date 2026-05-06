@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
+import { Link } from "react-router-dom";
 
 const BlogHeroSection = () => {
   return (
@@ -38,7 +39,10 @@ const BlogHeroSection = () => {
                 Augue ut lectus arcu bibendum at varius vel. Ipsum nunc aliquet bibendum enim facilisis. Quam elementum pulvinar etiam non quam lacus. Non odio euismod lacinia at quis risus sed vulputate...
               </p>
 
-              <button className="bh_btn">Read More &gt;</button>
+              {/* <button className="bh_btn">Read More &gt;</button> */}
+              <Link to="/blog-details" className="bh_btn">
+                Read More &gt;
+              </Link>
             </div>
 
             <div className="col-lg-6 bh_imgWrap">
